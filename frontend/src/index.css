@@ -182,19 +182,29 @@
 
 .work-section-column {
   display: flex;
-  gap: 2rem;
+  /* gap: 2rem; */
   justify-content: space-between;
   padding: 0.7rem 0;
   border-top: 1px solid #2A2A2E;
   font-size: small;
 }
 
-.year p, .status p{
-  color: #77777C;
+.year, .status, .project-name {
+  flex:1;
 }
 
-.status p {
+.status {
+  text-align: right;
   cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.project-name {
+  text-align: center;
+}
+
+.year , .status {
+  color: #77777C;
 }
 
 .off-screen-img-section {

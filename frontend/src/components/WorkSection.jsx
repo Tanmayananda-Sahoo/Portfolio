@@ -10,11 +10,11 @@ const WorkSection = () => {
         },
         {
             "year": 2026,
-            "title": "Portfolio",
+            "title": "DateFlyx",
             "status": "dateflyx.vercel.app/"
         },
         {
-            "year": 2026,
+            "year": 2024,
             "title": "Portfolio",
             "status": "tanmayy.com"
         }
@@ -41,7 +41,7 @@ const WorkSection = () => {
                                     {elem.title}
                                 </div>
                                 <div className="status" onMouseEnter={hoverAudio} onClick={clickAudio}>
-                                    <p>{elem.status}</p>
+                                    {elem.status}
                                 </div>
                             </div>
                         )
