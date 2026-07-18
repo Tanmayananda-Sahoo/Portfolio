@@ -11,7 +11,7 @@ const WorkSection = () => {
         {
             "year": 2026,
             "title": "Portfolio",
-            "status": "https://dateflyx.vercel.app/"
+            "status": "dateflyx.vercel.app/"
         },
         {
             "year": 2026,
