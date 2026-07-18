@@ -3,6 +3,9 @@ import FooterSection from '../components/FooterSection.jsx'
 import "slot-text/style.css";
 import { SlotText } from "slot-text/react";
 import { chromatic } from "slot-text";
+import WorkSection from '../components/WorkSection.jsx'
+import OffScreen from './OffScreen.jsx';
+import { hoverAudio } from '../utils/SoundPlay.js';
 
 const HomePageContent = () => {
   const [japanese, setJapanese] = React.useState(true);
@@ -13,17 +16,15 @@ const HomePageContent = () => {
   return (
     <div className='page-content'>
       <h4 className='home-page-header'>
-        {/* <SlotText
-          text={"Tanmayy", " タンマイ"}
-          options={{ direction: "up", color: "white" }}
-        />
-        Tanmayy */}
         <SlotText
           text={japanese ? "タンマイ": "Tanmayy"}
           options={{direction: japanese ? "up" : "down", color: "white"}}
         />
       </h4>
-      <p className="home-page-subheader">Updated On 13 Jul 2026</p>
+      <div className="home-page-sub-header">
+        <p className="home-page-subheader">Updated On 13 Jul 2026</p>
+        <span className='nav-subheader-btn'>currently learning</span>
+      </div>
       <div className="home-page-header-pattern"></div>
       <div className="home-page-desc">
         <p>I'm a full-stack developer who enjoys building products that solve real problems. Most of my work revolves around React, Node.js, Express, and MongoDB, where I focus on creating clean, scalable applications with thoughtful user experiences. I believe the best way to learn is by shipping projects, so I'm <span>constantly</span> building, refining, and experimenting with new ideas.</p>
@@ -32,11 +33,22 @@ const HomePageContent = () => {
         <p>Currently, I'm looking for internships and opportunities in Backend Engineering or Cybersecurity, where I can contribute, learn from experienced engineers, and continue building meaningful products. If you're working on something interesting—or just want to talk tech—feel free to reach out.</p>
       </div>
       <div className="home-page-tags-container">
-        <span className="home-page-tags"><span style={{ color: 'white', fontWeight: 'semibold' }}>22</span> repos</span>
-        <span className="home-page-tags"><span style={{ color: 'white', fontWeight: 'semibold' }}>~1k</span> commits</span>
-        <span className="home-page-tags"><span style={{ color: 'white', fontWeight: 'semibold' }}>5</span> languages</span>
-        <span className="home-page-tags"><span style={{ color: 'white', fontWeight: 'semibold' }}>live</span></span>
+        <div 
+        className="home-page-tags"
+        onMouseEnter={hoverAudio}
+        ><span style={{ color: 'white', fontWeight: 'semibold' }}>22</span> repos</div>
+        <span 
+        className="home-page-tags"
+        onMouseEnter={hoverAudio}><span style={{ color: 'white', fontWeight: 'semibold' }}>~1k</span> commits</span>
+        <span 
+        className="home-page-tags"
+        onMouseEnter={hoverAudio}><span style={{ color: 'white', fontWeight: 'semibold' }}>5</span> languages</span>
+        <span 
+        className="home-page-tags"
+        onMouseEnter={hoverAudio}><span style={{ color: 'white', fontWeight: 'semibold' }}>live</span></span>
       </div>
+      <WorkSection />
+      <OffScreen />
       <FooterSection />
     </div>
   )

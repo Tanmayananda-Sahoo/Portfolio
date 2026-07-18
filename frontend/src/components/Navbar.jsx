@@ -8,7 +8,6 @@ const Navbar = () => {
             <span className="nav-logo">EN</span>
         </div>
         <div className="nav-right">
-            <span className='nav-btn'><Volume2 className="nav-icon" color={'#77777C'} size={20}/></span>
             <span className="nav-btn"><Moon className="nav-icon" color={'#77777C'} size={20}/></span>
         </div>
     </div>
