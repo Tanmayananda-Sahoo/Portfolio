@@ -4,6 +4,21 @@ import {clickAudio, hoverAudio} from "../utils/SoundPlay.js";
 const FooterSection = () => {
   const [currentTime, setCurrentTime] = React.useState(new Date().toLocaleTimeString());
 
+  const clickLink = (tag)=> {
+    clickAudio();
+    switch(tag) {
+      case "Leetcode":
+        window.open("https://leetcode.com/u/Tanmayananda_Sahoo/", "_blank");
+      case "Github":
+        window.open("https://github.com/Tanmayananda-Sahoo", "_blank");
+      case "LinkedIn":
+        window.open("https://linkedin.com/in/tanmayananda-sahoo", "_blank");
+      case "Gmail":
+        window.open("mailto:boyvector06@gmail.com?subject=Portfolio Inquiry&body=Hi Tanmay,%0A%0AI came across your portfolio...", "_blank");
+      case "Whatsapp":
+        window.open("https://wa.me/9078959940?text=Hi%20Tanmay,%20I%20visited%20your%20portfolio!", "_blank");
+    }
+  }
   React.useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString());
@@ -20,7 +35,7 @@ const FooterSection = () => {
           className="linked-in social-media-icons" 
           title='linked-in'
           onMouseEnter={hoverAudio}
-          onClick={clickAudio}
+          onClick={() => clickLink("LinkedIn")}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={0.8} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -35,7 +50,7 @@ const FooterSection = () => {
           className="github social-media-icons" 
           title='github'
           onMouseEnter={hoverAudio}
-          onClick={clickAudio}
+          onClick={() => clickLink("Github")}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={0.8} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -46,7 +61,7 @@ const FooterSection = () => {
           className="mail social-media-icons" 
           title='mail'
           onMouseEnter={hoverAudio}
-          onClick={clickAudio}
+          onClick={() => clickLink("Gmail")}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={0.8} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-mail">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -58,7 +73,7 @@ const FooterSection = () => {
           className="whatsapp social-media-icons" 
           title='whatsapp'
           onMouseEnter={hoverAudio}
-          onClick={clickAudio}
+          onClick={() => clickLink("Whatsapp")}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={0.8} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -70,7 +85,7 @@ const FooterSection = () => {
           className="leet-code social-media-icons" 
           title='leet-code'
           onMouseEnter={hoverAudio}
-          onClick={clickAudio}
+          onClick={() => clickLink("Leetcode")}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={0.8} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-leetcode">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
