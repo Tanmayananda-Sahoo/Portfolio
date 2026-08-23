@@ -7,17 +7,20 @@ const WorkSection = () => {
         {
             "year": 2026,
             "title": "Portfolio",
-            "status": "tanmayy-beta.vercel.app"
+            "status": "tanmayy-beta.vercel.app",
+            "href":"tanmayy-beta.vercel.app"
         },
         {
             "year": 2026,
             "title": "DateFlyx",
-            "status": "dateflyx.vercel.app"
+            "status": "dateflyx.vercel.app",
+            "href":"dateflyx.vercel.app"
         },
         {
             "year": 2024,
-            "title": "Portfolio",
-            "status": "tanmayy.com"
+            "title": "Network vulnerability scanner",
+            "status": "NetVulnSc",
+            "href":"github.com/Tanmayananda-Sahoo/NetVulnSc"
         }
     ]
     return (
@@ -42,7 +45,7 @@ const WorkSection = () => {
                                     {elem.title}
                                 </div>
                                 <div className="status" onMouseEnter={hoverAudio} onClick={clickAudio}>
-                                    <Link to={`https://${elem.status}`} target='_blank' className='status-links'>{elem.status}</Link>
+                                    <Link to={`https://${elem.href}`} target='_blank' className='status-links'>{elem.status}</Link>
                                 </div>
                             </div>
                         )
