@@ -6,13 +6,13 @@ const WorkSection = () => {
     const works = [
         {
             "year": 2026,
-            "title": "Portfolio",
+            "title": "Portfolio (Current one)",
             "status": "tanmayy-beta.vercel.app",
             "href":"tanmayy-beta.vercel.app"
         },
         {
             "year": 2026,
-            "title": "DateFlyx",
+            "title": "DateFlyx (Website for a cafe)",
             "status": "dateflyx.vercel.app",
             "href":"dateflyx.vercel.app"
         },
