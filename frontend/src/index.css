@@ -136,6 +136,19 @@
   gap: 0.3rem;
 }
 
+.resume-btn {
+  background-color: #161619;
+  border: 1px solid #2A2A2E;
+  padding: 0.2rem 0.3rem;
+  font-size: smaller;
+  border-radius: 0.3rem;
+  color: #77777C;
+  letter-spacing: -0.02rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
 .footer-section {
   padding-top: 3rem;
 }
