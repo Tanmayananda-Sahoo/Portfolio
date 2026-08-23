@@ -2,11 +2,11 @@ import React from 'react'
 import CardScatter from "./CardScatter.jsx";
 
 const dates = [
-  { id: 1, src:"../src/assets/me.jpg"},
-  { id: 2, src:"../src/assets/aesthetic.jpeg"},
-  { id: 3, src:"../src/assets/me.jpg"},
-  { id: 4, src:"../src/assets/me.jpg"},
-  { id: 5, src:"../src/assets/me.jpg"},
+  { id: 1, src:"https://res.cloudinary.com/dl7crwyee/image/upload/v1787504312/me_xa6qfi.jpg"},
+  { id: 2, src:"https://res.cloudinary.com/dl7crwyee/image/upload/v1787504695/aesthetic_rn6bhb.jpg"},
+  { id: 3, src:"https://res.cloudinary.com/dl7crwyee/image/upload/v1787504312/me_xa6qfi.jpg"},
+  { id: 4, src:"https://res.cloudinary.com/dl7crwyee/image/upload/v1787504695/aesthetic_rn6bhb.jpg"},
+  { id: 5, src:"https://res.cloudinary.com/dl7crwyee/image/upload/v1787504312/me_xa6qfi.jpg"},
 ];
 
 const OffScreen = () => {
